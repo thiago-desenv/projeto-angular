@@ -1,1 +1,10 @@
-<p>Este é o meu componente!</p>
+<p *ngIf="nome > 'Bob Esponja'">Este é o meu componente!</p>
+
+<input type="text" (input)=atualizarNome($event)>
+
+{{nome}}
+
+<br><br>
+<div *ngFor="let item of arrayValores">
+    <p *ngIf="item !== 2">{{item}}</p>
+</div>
