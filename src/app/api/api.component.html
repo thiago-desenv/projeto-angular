@@ -1,1 +1,6 @@
-<p>api works!</p>
+<div *ngFor="let item of imagens; let i = index">
+    <ng-container *ngIf="i < 10">
+        <p>{{item.title}}</p>
+        <img [attr.src]="item.thumbnailUrl">
+    </ng-container>
+</div>

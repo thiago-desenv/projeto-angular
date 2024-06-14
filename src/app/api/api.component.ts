@@ -4,8 +4,6 @@ import { Imagem } from '../models/api';
 
 @Component({
   selector: 'app-api',
-  standalone: true,
-  imports: [],
   templateUrl: './api.component.html',
   styleUrl: './api.component.css'
 })
